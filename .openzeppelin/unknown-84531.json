@@ -1,0 +1,1244 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x528e594f46d2ebBf737b50c4248B89ED185700E4",
+    "txHash": "0x6df71030906a4d88ab482a995d448040107f23b439c4d1bfe45e5585ca0c2a54"
+  },
+  "proxies": [
+    {
+      "address": "0xF3476f6989cCe062935e00B894f30642B6184E6f",
+      "txHash": "0x587dfa298fc614d0c609f068f0a8795849925122d2c98fdbb0f23c24f3c30067",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x4FB00182d0e777b65386F43DE491eCCa3327dDc7",
+      "txHash": "0xcd31771c311208c42a3d052e443f00ea470c61eeb635172b9439d784e71fc70c",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x40Aa8792d5bF2580Eae00195304A67A82766678d",
+      "txHash": "0x109ba46e49d6731bd243c3d9065abb91de08950f0e36a149accf9364c831d8e6",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x989412386A391F6dA332581CfdB2E08818053D08",
+      "txHash": "0xffb8d4d132eff795fd75b8b65d66b1475efcb52870d3b9284739db46b4d36c55",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x56e0D9cB59D35002ccC9BcA78995e3DA32bd1a0C",
+      "txHash": "0x8a0370ab4be8262bf6b8d5939303e50bba7cbefee71eef7e332ae8767f095783",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "0007ee313d3c69c75c64605633bd86f4ef204d4e2d56c624970f3ce1cba30c28": {
+      "address": "0xFE6776416aF291578Ccf8f44b09a90715B306030",
+      "txHash": "0xd1656fe0b0f706daf492b86748d93da7fe4068b72a2af23623b4167a3c7489ff",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "protocolFeeDestination",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechShares.sol:9"
+          },
+          {
+            "label": "protocolFeePercent",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechShares.sol:10"
+          },
+          {
+            "label": "subjectFeePercent",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechShares.sol:11"
+          },
+          {
+            "label": "initialPrice",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechShares.sol:12"
+          },
+          {
+            "label": "sharesBalance",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechShares.sol:26"
+          },
+          {
+            "label": "sharesSupply",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechShares.sol:29"
+          },
+          {
+            "label": "sharesWay",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechShares.sol:32"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)45_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)14_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "a39f6261f27d612517b01368a08300b2bbdf1dace3a9b05b705075b702112acb": {
+      "address": "0xeE0c7cf7129538507DC1Fe905fF83fe31d85CBb9",
+      "txHash": "0x442e6a677d5d3de43ff0facf903d47c2905c57be38eb337e5afc45a5d899a273",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "protocolFeeDestination",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:9"
+          },
+          {
+            "label": "protocolFeePercent",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:10"
+          },
+          {
+            "label": "subjectFeePercent",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:11"
+          },
+          {
+            "label": "initialPrice",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:12"
+          },
+          {
+            "label": "sharesBalance",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:26"
+          },
+          {
+            "label": "sharesSupply",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:29"
+          },
+          {
+            "label": "sharesWay",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:32"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)45_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)14_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "c0c8f97b60e7ea0647edd2ea3da4cb363cbdade78dd7455a804d36f24fe68313": {
+      "address": "0xAe1942328eD66bd112d08AFBB43041047fDF1dDB",
+      "txHash": "0x74d80b6ea9c00c1aca81f84b0b73ce11ef9200e7b8072b5e693fbfc9de77cc41",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "protocolFeeDestination",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:9"
+          },
+          {
+            "label": "protocolFeePercent",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:10"
+          },
+          {
+            "label": "subjectFeePercent",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:11"
+          },
+          {
+            "label": "initialPrice",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:12"
+          },
+          {
+            "label": "sharesBalance",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:26"
+          },
+          {
+            "label": "sharesSupply",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:29"
+          },
+          {
+            "label": "sharesWay",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:32"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)45_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)14_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "3a10efdcd83301b3f292a75de88796bec215f97b1fc172e90be75486dc692d49": {
+      "address": "0xc332c2C5cDF631D100D80F445FB623fc3b757490",
+      "txHash": "0x858c5fc1a2502638a767192e87a38d8f740dc8d8a05537669e54b316e62247fe",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "protocolFeeDestination",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:9"
+          },
+          {
+            "label": "protocolFeePercent",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:10"
+          },
+          {
+            "label": "subjectFeePercent",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:11"
+          },
+          {
+            "label": "initialPrice",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:12"
+          },
+          {
+            "label": "sharesBalance",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:26"
+          },
+          {
+            "label": "sharesSupply",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:29"
+          },
+          {
+            "label": "sharesWay",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:32"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)45_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)14_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "08e6a9c606b4e5b772a78ba8c12628321b526b77d273a550ffc572aa3b8d930f": {
+      "address": "0xbCCD565ca200996651C614DB764B0C358B44B97f",
+      "txHash": "0xbcfc986f1c93a80a030f9c3458d377202803d1204c92dbbfd8a7075405b91619",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "protocolFeeDestination",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:9"
+          },
+          {
+            "label": "protocolFeePercent",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:10"
+          },
+          {
+            "label": "subjectFeePercent",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:11"
+          },
+          {
+            "label": "initialPrice",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:12"
+          },
+          {
+            "label": "sharesBalance",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:26"
+          },
+          {
+            "label": "sharesSupply",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:29"
+          },
+          {
+            "label": "sharesWay",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:32"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)45_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)14_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "c67f402a687ab11a9d838bee26913c0965df2bbad256f83fa43d35baa0ee131d": {
+      "address": "0x04e6cAE404A23816B3b154c99AF74C40D35F6c95",
+      "txHash": "0x9bbcbf611e8e38f320add67bb9869b8be67afff814ee137ddf325afcb229f907",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "protocolFeeDestination",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:9"
+          },
+          {
+            "label": "protocolFeePercent",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:10"
+          },
+          {
+            "label": "subjectFeePercent",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:11"
+          },
+          {
+            "label": "initialPrice",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:12"
+          },
+          {
+            "label": "sharesBalance",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:26"
+          },
+          {
+            "label": "sharesSupply",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:29"
+          },
+          {
+            "label": "sharesWay",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV2",
+            "src": "contracts\\FriendTechSharesV2.sol:32"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)45_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)14_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "58ca0f70d0101b653bed4c242a5d7634cce25bfef2dee97d090f3251f2dd1883": {
+      "address": "0x83C8C273444cc286FaB9627AA6C2321045C96c32",
+      "txHash": "0xeaac2b762f1781da0c23bc567b714fac2a89cc47f426e62e69fed62a5750407f",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "protocolFeeDestination",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechSharesV1.sol:9"
+          },
+          {
+            "label": "protocolFeePercent",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechSharesV1.sol:10"
+          },
+          {
+            "label": "subjectFeePercent",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechSharesV1.sol:11"
+          },
+          {
+            "label": "initialPrice",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechSharesV1.sol:12"
+          },
+          {
+            "label": "sharesBalance",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechSharesV1.sol:26"
+          },
+          {
+            "label": "sharesSupply",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechSharesV1.sol:29"
+          },
+          {
+            "label": "sharesWay",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechSharesV1.sol:32"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)45_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)14_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "ea224216721fcbf51bb41b83eb99f7bf78af4868b75897f56ecd6ff106d493b2": {
+      "address": "0xA79eAf7d368BE84C0d961Dc6cB255224a61d2857",
+      "txHash": "0xcd5b4f3de11bd91e3804aeeb315e4526d2185235f20b421a2304a5a9cd1bd9f7",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "protocolFeeDestination",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechSharesV1.sol:9"
+          },
+          {
+            "label": "protocolFeePercent",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechSharesV1.sol:10"
+          },
+          {
+            "label": "subjectFeePercent",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechSharesV1.sol:11"
+          },
+          {
+            "label": "initialPrice",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechSharesV1.sol:12"
+          },
+          {
+            "label": "sharesBalance",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechSharesV1.sol:26"
+          },
+          {
+            "label": "sharesSupply",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechSharesV1.sol:29"
+          },
+          {
+            "label": "sharesWay",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "FriendtechSharesV1",
+            "src": "contracts\\FriendTechSharesV1.sol:32"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)45_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)14_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
