@@ -30,9 +30,17 @@ module.exports = {
       url: `https://goerli.infura.io/v3/${process.env.INFURA_API_KEY}`,
       accounts: [process.env.WALLET_KEY],
     },
+    matic: {
+      url: "https://polygon-rpc.com",
+      accounts: [process.env.WALLET_KEY]
+    },
+    bsc: {
+      url: 'https://bsc-dataseed.binance.org/',
+      accounts: [process.env.WALLET_KEY]
+    }
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY,
+    apiKey: process.env.BSCSCAN_API_KEY,
   },
   sourcify: {
     enabled: true,
